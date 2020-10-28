@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/css.css" type="text/css"/>
+   <title>Atividade</title>
+   
+</head>
+
+<body class="bg"  background ="img/chama.jpg";>
+   
+
+   <div id="cava">
+      <div id="mes"><script>
+         function mudar(){
+var momentoAtual = new Date();
+
+var vmes = momentoAtual.getMonth() + 1;
+
+if (vmes < 10){ vmes = "0" + vmes;}
+
+function CriaArray (n) {
+
+this.length = n }
+
+NomeMes = new CriaArray(12)
+
+NomeMes[0] = "Janeiro"
+
+NomeMes[1] = "Fevereiro"
+
+NomeMes[2] = "Março"
+
+NomeMes[3] = "Abril"
+
+NomeMes[4] = "Maio"
+
+NomeMes[5] = "Junho"
+
+NomeMes[6] = "Julho"
+
+NomeMes[7] = "Agosto"
+
+NomeMes[8] = "Setembro"
+
+NomeMes[9] = "Outubro"
+
+NomeMes[10] = "Novembro"
+
+NomeMes[11] = "Dezembro"
+
+document.getElementById("mes").innerHTML = NomeMes[vmes];
+         }
+         setInterval(mudar,1000);
+</script>
+     </div>
+     <div id="diasem"><script>
+      var semana = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"];
+      
+      var d = new Date();
+      
+      document.getElementById("diasem").innerHTML = semana[d.getDay()];
+      </script></div>
+      <div id="dia">
+         <script>
+           function mudar(){
+         var  momentoAtual = new Date();
+
+         var vdia = momentoAtual.getDate(); 
+
+         if (vdia < 10){ vdia = "0" + vdia;}
+
+         document.getElementById("dia").innerHTML = vdia;
+      }
+           setInterval(mudar,1000);
+        </script></div>
+        <div id="ano"><script>
+           var momentoAtual = new Date();
+           var vano = momentoAtual.getFullYear();
+
+           document.getElementById("ano").innerHTML = vano;
+          
+        </script></div>
+      <div id="hora">
+         <script>
+   function mudar(){
+            var momentoAtual = new Date();
+            
+            var vhora = momentoAtual.getHours();
+            var vminuto = momentoAtual.getMinutes();
+            var vsegundo = momentoAtual.getSeconds();
+          
+            if (vhora < 10){ vhora = "0" + vhora;}
+            if (vminuto < 10){ vminuto = "0" + vminuto;}
+            if (vsegundo < 10){ vsegundo = "0" + vsegundo;}
+      
+           
+            horaFormat = vhora + " : " + vminuto + " : " + vsegundo;
+      
+            
+            document.getElementById("hora").innerHTML = horaFormat;
+   }
+            setInterval(mudar,1000);
+         
+      </script>	
+        
+        
+      </div>
+
+</div>
+
+</body>
+
+
+
+  
+      
+</html>

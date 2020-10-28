@@ -1,0 +1,73 @@
+#dia{
+    position: relative;
+    top: 20px;
+    left: 54px;
+    width: 70px;
+    height: auto;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 4em;
+    
+}
+#hora{
+    position: relative;
+    top: 40px;
+    left: 52px;
+    margin: center;
+   
+    width: 75px;
+    height: 15px;
+    text-align: center;
+    
+}
+
+#mes{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border: solid;
+    border-color: blue;
+    margin: center;
+font-size: 2em;
+font-family: Georgia, 'Times New Roman', Times, serif;
+background-color: blue;
+    
+}
+
+#ano{
+    position: relative;
+    top: 30px;
+    left: 52px;
+    margin: center;
+    color:#808080;
+    width: 75px;
+    height: 15px;
+    text-align: center;
+    
+}
+#cava{position: relative;
+margin-top: 20%;
+margin-left: 45%;
+text-align: center;
+    width: 180px;
+    height: 240px;
+    background-color: white;
+}
+
+#diasem{
+    position: relative;
+top:12px;
+   color:#808080;
+    margin: center;
+font-size: 1em;
+}
+
+.bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+
